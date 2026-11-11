@@ -15,12 +15,11 @@ public class Character {
         name = n;
 
         if (heal <= 10 && heal >= 0) health = heal;
-        else if (heal < 0) health = 0;
-        else health = 10;
+        else health = 0;//default
+
 
         if(lvl <= 5 && lvl >= 0) level = lvl;
-        else if (lvl < 0) level = 0;
-        else level = 5;
+        else level = 0;//default
     }
 
     public String getName(){return name;}
