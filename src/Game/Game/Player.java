@@ -8,13 +8,14 @@ public class Player extends Character{
 
     public Player(String n, int heal, int lvl){
         super(n, heal, lvl);
-        Item[] inventory = new Item[0];
+        this.inventory = new Item[0];
     }
 
     public Player (String n, int heal, int lvl, Item[] items){
         super(n, heal, lvl);
-        Item[] inventory = items;
+        this.inventory = items;
     }
+  
     public void addItem(Item item){
         inventory = Arrays.copyOf(inventory, inventory.length +1);
         inventory[inventory.length - 1] = item;
@@ -32,6 +33,8 @@ public class Player extends Character{
         }
         return false;
     }
+    
+    
     //assisting function
     public String getInventoryNames(Item[] inventory){
         return Arrays.stream(inventory).map(Item::getName).collect(Collectors.joining(" | "));

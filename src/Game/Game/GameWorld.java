@@ -47,6 +47,21 @@ public class GameWorld {
         }
         return totalValue;
     }
+    public void simulateBattle(Player p, Enemy e) {
+	    String ename = e.getName();
+	    String pname = p.getName();
+    System.out.println(pname + " VS " + ename);
+        if(p.getLevel() < e.getLevel()) {
+    	      System.out.println(ename + " WINS!");
+    	      e.levelUp();
+       }else {
+    	      System.out.println(pname + " WINS!");
+    	      p.levelUp();
+    	   
+       }
+   }
+
+    
     public String toString(){
         return "World Name: " + name + "\nDifficulty: " + difficulty + "\nNumber of Players: " + players.length;
     }

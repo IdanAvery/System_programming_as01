@@ -1,7 +1,7 @@
 package Game;
 
 public class Character {
-    private final String name;
+    private String name;
     private int health;
     private int level;
 
