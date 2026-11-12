@@ -1,5 +1,4 @@
 package Game;
-import Game.Item;
 
 public class GameMain {
     public static void main(String[] args){
@@ -17,7 +16,7 @@ public class GameMain {
         playerA.addItem(spear);
         playerB.addItem(sword);
 
-        // created enemy Enemy(String n, int heal, int lvl, int dmg)
+        // created  Enemy(String n, int heal, int lvl, int dmg)
         Enemy enemy1 = new Enemy("slime", 35, 1, 20);
 
         // created game world
