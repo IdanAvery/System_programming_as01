@@ -1,3 +1,5 @@
+//Idan Abergel and Sveta Yashenko
+
 package Game;
 
 import java.util.Arrays;
