@@ -1,5 +1,4 @@
-//Idan Abergel and Sveta Yashenko
-package ThreadHorseRace;
+ package ThreadHorseRace;
 import java.util.Random;
 
 
