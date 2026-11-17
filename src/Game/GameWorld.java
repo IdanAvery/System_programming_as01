@@ -1,4 +1,5 @@
-//Idan Abergel and Sveta Yashenko
+//Idan Abergel 208055665
+// Sveta Yashenko 323922328
 package Game;
 import java.util.Arrays;
 
